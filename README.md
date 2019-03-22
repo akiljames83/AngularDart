@@ -4,10 +4,12 @@ Created from templates made available by Stagehand under a BSD-style
 [license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
 
 To setup:
+```bash
 > mkdir quickstart
 > cd quickstart
 > stagehand web-simple
 > pub get
+```
 
 To create:
 > webdev serve # will be on http://localhost:8080
