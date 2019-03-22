@@ -1,12 +1,17 @@
 <h1>
   {{title}}
 </h1>
-<p>
-	Your hero is {{hero.name}}. <br>
-	{{hero.name}}'s ID is {{hero.id}}.
-</p>
 
-<h2>Update Hero Name:</h2>
+<h2>
+    Current Hero
+</h2>
+<div>
+    <p *ngIf="selected.id > 0">
+        Hero: {{selected.name}}; ID: {{selected.id}}.
+    </p>
+</div>
+
+<!-- <h2>Update Hero Name:</h2>
 
 <div>
   <label>
@@ -14,11 +19,12 @@
 	</label>
 	<input [(ngModel)]="hero.name" placeholder="Update name">
 </div>
-
+ -->
 <h2>List of Heros:</h2>
 <br>
 <ul class="heroes">
-    <li *ngFor="let hero of heros" >
+    <li *ngFor="let hero of heros"
+        (click)="onClick(hero)" >
         <span class="badge">{{hero.id}}</span> {{hero.name}}
     </li>
 </ul>
@@ -26,3 +32,6 @@
 <div *ngIf="heros.length > 3">
     You have many heros!
 </div>
+
+
+
