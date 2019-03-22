@@ -12,7 +12,7 @@ import 'src/mockHeros.dart';
 )
 class AppComponent {
   var title = 'Mock Heros Project';
-  Hero selected = Hero(0,"");
+  Hero selected;
   List<Hero> heros = mockHeros;
   void onClick(hero) => selected = hero;
 }
