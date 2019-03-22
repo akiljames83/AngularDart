@@ -10,6 +10,9 @@ This page is to document my journey using AngularDart. I will update this page w
 > pub get
 ```
 
+### Dart SDK - Personal:
+For reference, the dart-sdk is located here: C:\Users\akilj\flutter\bin\cache.
+
 ## To create: 
 ```bash
 > webdev serve
