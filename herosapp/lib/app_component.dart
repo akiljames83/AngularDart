@@ -6,7 +6,7 @@ import 'src/mockHeros.dart';
 @Component(
   selector: 'my-app',
   //template: , // Replace template with templateUrl
-  templateUrl: 'src/app_component.html',
+  templateUrl: 'app_component.html',
   styleUrls: ['app_component.css'],
   directives: [coreDirectives, formDirectives],
 )
