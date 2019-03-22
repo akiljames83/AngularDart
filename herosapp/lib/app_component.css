@@ -7,7 +7,6 @@
   list-style-type: none;
   padding: 0;
   width: 15em;
-  color: red;
 }
 .heroes li {
   cursor: pointer;
