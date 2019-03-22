@@ -6,9 +6,9 @@ import 'hero.dart';
 @Component(
 	selector: 'my-hero',
 	templateUrl: 'hero_component.html',
-	directives: [formDirectives, coreDirectives]
+	directives: [formDirectives, coreDirectives],
 )
 class HeroComponent{
-	@Input() // Property binding expression
+	@Input()
 	Hero hero;
 }
