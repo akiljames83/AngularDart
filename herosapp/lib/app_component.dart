@@ -5,7 +5,7 @@ import 'hero.dart';
 @Component(
   selector: 'my-app',
   //template: , // Replace template with templateUrl
-  templateUrl: 'app_component.html',
+  templateUrl: 'src/app_component.html',
   directives: [formDirectives],
 )
 class AppComponent {
