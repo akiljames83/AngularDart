@@ -55,3 +55,11 @@ growableList[0] = 87;
 
 ## Using AngularDart
 Clone from the following repo and follow setup instructions in README.md: https://github.com/angular-examples/quickstart/tree/master .
+
+### Component
+Various properties that can be used each component:
+- <em>Selector:</em>  denotes the html tag that can be used in main HTML files
+- <em>Template:</em> denotes the HTML as well as the app_component variables that will be used in the page. This is defined inline (or multiline).
+- <em>TemplateUrl:</em> denotes the location of an HTML file that implements the structure for the component
+- <em>Directives: </em>denotes the directives to be used from particular imports, (eg. formDirectives import for angular_forms package).
+
