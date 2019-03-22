@@ -54,4 +54,4 @@ growableList[0] = 87;
 ```
 
 ## Using AngularDart
-Clone from the following repo and follow setup instructions in README.md: https://github.com/angular-examples/toh-5/tree/master .
+Clone from the following repo and follow setup instructions in README.md: https://github.com/angular-examples/quickstart/tree/master .
