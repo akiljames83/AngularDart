@@ -15,7 +15,7 @@ html, body {
 	font-size: 14px;
 	font-weight: normal;
 	padding: 5px 0px 5px 5px;
-	width: 40%;
+	width: 100%;
 	border: 1px solid silver;
 	background-color: white;
 }
@@ -23,7 +23,7 @@ html, body {
 #todo-list {
 	padding: 0px;
 	margin: 0px;
-	width: 60%;
+	width: 100%;
 	list-style-position: inside;
 }
 
@@ -32,3 +32,24 @@ html, body {
 	border-bottom: 1px dotted silver;
 }
 
+#todo-list li:hover {
+  color: red;
+  cursor: pointer;
+}
+
+#delete {
+  margin-top: 8px;
+  background-color: #F8F8F8;
+  border: 1px dotted #ccc;
+  border-radius: 1em;
+  float: right;
+  padding: 7px;
+}
+
+#delete:hover {
+  background-color: #ddd;
+}
+
+.body {
+	width: 80%;
+}
