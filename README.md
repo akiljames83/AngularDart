@@ -32,7 +32,7 @@ This will generate the main.dart.js file most likely in /build folder. In the HT
 The element class is the underlying Data structure for interacting with the DOM. In the following link are various ways to interact with the DOM as well as add new elements to the DOM: https://api.dartlang.org/stable/2.2.0/dart-html/Element-class.html .
 
 ## Using Lists in Dart
-The following sections demonstrates how to use the List Class in Dart.
+The following sections demonstrates how to use the List Class in Dart. The documentation for the List Class can be found here: https://api.dartlang.org/stable/2.2.0/dart-core/List-class.html .
 
 Fixed Length:
 ```dart
