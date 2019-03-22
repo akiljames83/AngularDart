@@ -1,4 +1,5 @@
 import 'package:angular/angular.dart';
+import 'package:angular_forms/angular_forms.dart';
 import 'hero.dart';
 
 @Component(
@@ -24,6 +25,7 @@ import 'hero.dart';
   		<div><label>id: </label>{{hero.id}}</div>
   		<div><label>name: </label>{{hero.name}}</div>
   		''',
+  	directives: [formDirectives],
 )
 class AppComponent {
   var name = 'Angular';
