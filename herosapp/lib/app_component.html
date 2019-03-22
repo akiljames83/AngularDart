@@ -2,20 +2,6 @@
   {{title}}
 </h1>
 
-<div *ngIf="selected != null">
-
-    <h2>
-        {{selected.id}} : {{selected.name}}
-    </h2>
-    <div>
-        <label>
-            Update:
-        </label>
-        <input [(ngModel)]="selected.name" placeholder="Update name">
-    </div>
-
-</div>
-
 <h2>List of Heros:</h2>
 <ul class="heroes">
     <li *ngFor="let hero of heros"

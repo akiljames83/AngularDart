@@ -1,0 +1,11 @@
+<div *ngIf="selected != null">
+    <h2>
+        {{hero.id}} : {{hero.name}}
+    </h2>
+    <div>
+        <label>
+            Update:
+        </label>
+        <input [(ngModel)]="hero.name" placeholder="Update name">
+    </div>
+</div>
