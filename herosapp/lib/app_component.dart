@@ -1,14 +1,17 @@
 import 'package:angular/angular.dart';
 import 'package:angular_forms/angular_forms.dart';
 import 'src/hero.dart';
+import 'src/mockHeros.dart';
 
 @Component(
   selector: 'my-app',
   //template: , // Replace template with templateUrl
   templateUrl: 'src/app_component.html',
-  directives: [formDirectives],
+  styleUrls: ['app_component.css'],
+  directives: [coreDirectives, formDirectives],
 )
 class AppComponent {
-  var name = 'Angular';
-  Hero hero = Hero(1, 'Akil');
+  var title = 'Mock Heros Project';
+  Hero hero = mockHeros[0];
+  List<Hero> heros = mockHeros;
 }
