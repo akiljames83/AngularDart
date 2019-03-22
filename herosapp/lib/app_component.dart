@@ -9,7 +9,7 @@ import 'src/hero_component.dart';
   selector: 'my-app',
   templateUrl: 'app_component.html',
   styleUrls: ['app_component.css'],
-  directives: [coreDirectives, formDirectives],
+  directives: [coreDirectives, HeroComponent],
 )
 class AppComponent {
   var title = 'Mock Heros Project';
