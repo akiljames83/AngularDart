@@ -27,3 +27,25 @@ This will generate the main.dart.js file most likely in /build folder. In the HT
 ```html
 <script defer src="../build/main.dart.js"></script>
 ```
+
+## Element Class Documentation
+The element class is the underlying Data structure for interacting with the DOM. In the following link are various ways to interact with the DOM as well as add new elements to the DOM: https://api.dartlang.org/stable/2.2.0/dart-html/Element-class.html .
+
+## Using Lists in Dart
+The following sections demonstrates how to use the List Class in Dart.
+
+Fixed Length:
+```dart
+List<int> fixedLengthList = new List(5);
+fixedLengthList.length = 0;  // Error
+fixedLengthList.add(499);    // Error
+fixedLengthList[0] = 87;
+```
+
+Dynamically Sized List:
+```dart
+List<int> growableList = [1, 2];
+growableList.length = 0;
+growableList.add(499);
+growableList[0] = 87;
+```
