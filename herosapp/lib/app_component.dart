@@ -1,4 +1,5 @@
 import 'package:angular/angular.dart';
+import 'package:angular_router/angular_router.dart';
 
 import 'src/hero_service.dart';
 import 'src/hero_list_component.dart';
