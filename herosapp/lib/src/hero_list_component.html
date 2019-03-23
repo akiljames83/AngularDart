@@ -1,0 +1,22 @@
+<h1>
+  {{title}}
+</h1>
+
+<my-hero [hero]="selected"></my-hero>
+
+<h2>List of Heros:</h2>
+<ul class="heroes">
+    <li *ngFor="let hero of heros"
+        (click)="onClick(hero)" 
+        [class.selected]="hero === selected" >
+
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </li>
+</ul>
+
+<div *ngIf="heros.length > 3">
+    You have many heros!
+</div>
+
+
+
