@@ -1,32 +1,15 @@
-import 'dart:async';
-
 import 'package:angular/angular.dart';
 
-import 'src/hero.dart';
-import 'src/mockHeros.dart';
-import 'src/hero_component.dart';
 import 'src/hero_service.dart';
+import 'src/hero_list_component.dart';
 
 @Component(
   selector: 'my-app',
   templateUrl: 'app_component.html',
   styleUrls: ['app_component.css'],
-  directives: [coreDirectives, HeroComponent],
+  directives: [HeroListComponent],
   providers: [ClassProvider(HeroService)],
 )
 class AppComponent implements OnInit {
   final title = 'Mock Heros Project';
-  final HeroService _heroService;
-  List<Hero> heros;
-  Hero selected;
-
-  AppComponent(this._heroService);
-    
-  Future<void> _async_getHeros() async {
-	heros = await _heroService.getAll();
-  }
-  void _getHeros() => heros = _heroService.getAll();
-
-  void ngOnInit() => _getHeros();
-  void onClick(hero) => selected = hero;
 }

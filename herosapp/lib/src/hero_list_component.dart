@@ -15,7 +15,6 @@ import 'hero_service.dart';
   providers: [ClassProvider(HeroService)],
 )
 class HeroListComponent implements OnInit {
-  final title = 'Mock Heros Project';
   final HeroService _heroService;
   List<Hero> heros;
   Hero selected;
