@@ -10,6 +10,6 @@ import 'src/hero_list_component.dart';
   directives: [HeroListComponent],
   providers: [ClassProvider(HeroService)],
 )
-class AppComponent implements OnInit {
+class AppComponent {
   final title = 'Mock Heros Project';
 }
