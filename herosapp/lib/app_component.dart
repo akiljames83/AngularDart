@@ -1,5 +1,6 @@
+import 'dart:async';
+
 import 'package:angular/angular.dart';
-import 'package:angular_forms/angular_forms.dart';
 
 import 'src/hero.dart';
 import 'src/mockHeros.dart';
@@ -13,17 +14,19 @@ import 'src/hero_service.dart';
   directives: [coreDirectives, HeroComponent],
   providers: [ClassProvider(HeroService)],
 )
-class AppComponent implements onInit {
-  var title = 'Mock Heros Project';
-
-  Hero selected;
-  void onClick(hero) => selected = hero;
-
+class AppComponent implements OnInit {
+  final title = 'Mock Heros Project';
   final HeroService _heroService;
-  AppComponent(this._heroService);
-
   List<Hero> heros;
+  Hero selected;
+
+  AppComponent(this._heroService);
+    
+  Future<void> _async_getHeros() async {
+	heros = await _heroService.getAll();
+  }
   void _getHeros() => heros = _heroService.getAll();
 
   void ngOnInit() => _getHeros();
+  void onClick(hero) => selected = hero;
 }
