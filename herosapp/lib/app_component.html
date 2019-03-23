@@ -1,5 +1,8 @@
 <h1>
   {{title}}
 </h1>
-
-<my-heros></my-heros>
+<nav>
+	<a [routerLink]="RoutePaths.heros.toUrl()"
+   	[routerLinkActive]="'active'">Heros</a>
+</nav>
+<router-outlet [routes]="Routes.all"></router-outlet>
