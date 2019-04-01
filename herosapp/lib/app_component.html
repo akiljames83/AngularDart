@@ -4,5 +4,7 @@
 <nav>
 	<a [routerLink]="RoutePaths.heros.toUrl()"
    	[routerLinkActive]="'active'">Heros</a>
+   	<a [routerLink]="RoutePaths.dashboard.toUrl()"
+   	[routerLinkActive]="'active'">Dashboard</a>
 </nav>
 <router-outlet [routes]="Routes.all"></router-outlet>
